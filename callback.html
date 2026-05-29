@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Autorisation QBO — Centrale Encrage</title>
+<style>
+  body { font-family: monospace; padding: 40px; background: #1a1a1a; color: #00ff88; }
+  h2 { color: white; margin-bottom: 20px; }
+  .code-box {
+    background: #000;
+    border: 1px solid #00ff88;
+    padding: 20px;
+    margin: 10px 0;
+    word-break: break-all;
+    font-size: 0.9rem;
+  }
+  .label { color: #888; font-size: 0.8rem; margin-top: 15px; }
+  button {
+    background: #00ff88;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: monospace;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<h2>✅ Autorisation QBO reçue</h2>
+<p>Copiez ces valeurs et entrez-les dans <strong>qbo_auth.py</strong> :</p>
+
+<div class="label">CODE :</div>
+<div class="code-box" id="code">—</div>
+<button onclick="navigator.clipboard.writeText(document.getElementById('code').innerText)">Copier</button>
+
+<div class="label">REALM ID :</div>
+<div class="code-box" id="realm">—</div>
+<button onclick="navigator.clipboard.writeText(document.getElementById('realm').innerText)">Copier</button>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById('code').innerText  = params.get('code')    || 'non trouvé';
+  document.getElementById('realm').innerText = params.get('realmId') || 'non trouvé';
+</script>
+</body>
+</html>
