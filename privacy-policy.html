@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — Librairie Encrage</title>
+<style>
+  :root {
+    --noir: #1a1a1a;
+    --encre: #2c3e50;
+    --accent: #8b4513;
+    --fond: #faf8f5;
+    --gris: #6b7280;
+    --ligne: #e5e0d8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--fond);
+    color: var(--noir);
+    line-height: 1.8;
+  }
+  header {
+    background: var(--encre);
+    color: white;
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+    border-bottom: 4px solid var(--accent);
+  }
+  header h1 {
+    font-size: 1.1rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+  }
+  header h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+  }
+  .date-maj {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    opacity: 0.6;
+    font-style: italic;
+  }
+  main {
+    max-width: 780px;
+    margin: 3rem auto;
+    padding: 0 2rem 4rem;
+  }
+  section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--ligne);
+  }
+  section:last-child { border-bottom: none; }
+  h3 {
+    font-size: 1.1rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    font-weight: normal;
+  }
+  p { margin-bottom: 1rem; color: #333; }
+  ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+  li { margin-bottom: 0.4rem; color: #333; }
+  .contact-box {
+    background: var(--encre);
+    color: white;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--accent);
+    margin-top: 2rem;
+  }
+  .contact-box a { color: #a8d8ea; }
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--gris);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--ligne);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Librairie Encrage</h1>
+  <h2>Politique de confidentialité</h2>
+  <p class="date-maj">Dernière mise à jour : 1er juin 2025</p>
+</header>
+
+<main>
+
+  <section>
+    <h3>1. Présentation</h3>
+    <p>La présente politique de confidentialité décrit comment <strong>Librairie Encrage</strong> (ancrage.info) collecte, utilise et protège les informations dans le cadre de l'utilisation de l'application interne <em>Centrale Encrage</em>, connectée à QuickBooks Online via l'API officielle d'Intuit.</p>
+    <p>Cette application est un outil de gestion interne destiné exclusivement à l'usage de Librairie Encrage et n'est pas distribuée au public.</p>
+  </section>
+
+  <section>
+    <h3>2. Données collectées</h3>
+    <p>Dans le cadre de l'intégration avec QuickBooks Online, l'application accède aux données suivantes :</p>
+    <ul>
+      <li>Informations sur les clients (nom, coordonnées de facturation)</li>
+      <li>Données de facturation (montants, taxes, dates de transaction)</li>
+      <li>Codes de taxes et termes de paiement configurés dans QuickBooks</li>
+      <li>Produits et services définis dans le compte QuickBooks</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>3. Utilisation des données</h3>
+    <p>Les données accessibles via QuickBooks Online sont utilisées uniquement pour :</p>
+    <ul>
+      <li>La création automatisée de factures et de mémos de crédit</li>
+      <li>La vérification de l'existence des clients dans le système comptable</li>
+      <li>L'application des codes de taxes appropriés selon la nature des transactions</li>
+    </ul>
+    <p>Aucune donnée n'est transmise à des tiers, stockée sur des serveurs externes, ni utilisée à des fins commerciales ou publicitaires.</p>
+  </section>
+
+  <section>
+    <h3>4. Sécurité</h3>
+    <p>L'authentification avec QuickBooks Online est effectuée via le protocole OAuth 2.0 officiel d'Intuit. Les jetons d'accès sont stockés localement sur le serveur interne de Librairie Encrage et ne sont jamais partagés.</p>
+    <p>L'accès à l'application est limité au personnel autorisé de Librairie Encrage.</p>
+  </section>
+
+  <section>
+    <h3>5. Conservation des données</h3>
+    <p>Les données ne sont pas stockées de façon permanente par l'application. Chaque transaction lit les données nécessaires depuis QuickBooks Online au moment de son exécution et n'en conserve aucune copie locale.</p>
+  </section>
+
+  <section>
+    <h3>6. Vos droits</h3>
+    <p>Conformément aux lois applicables au Québec, toute personne dont les données sont traitées peut exercer ses droits d'accès, de rectification et de suppression en nous contactant directement.</p>
+
+    <div class="contact-box">
+      <strong>Librairie Encrage</strong><br>
+      Rouyn-Noranda, Québec, Canada<br>
+      <a href="mailto:info@ancrage.info">info@ancrage.info</a><br>
+      <a href="https://ancrage.info">ancrage.info</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Librairie Encrage — ancrage.info
+</footer>
+
+</body>
+</html>
